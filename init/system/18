@@ -1,0 +1,5 @@
+# Find the command that kills ssh service
+
+pkill -U adespina
+
+# man.

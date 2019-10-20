@@ -1,0 +1,6 @@
+# Name the command that displays the available space left and used on the system in an humanly understandable way
+
+df --human-readable
+
+# df - Отображает статистику об объеме свободного дискового пространства в указанной файловой системе или в той файловой системе, частью которой является файл. (man).
+# На маке df -H.

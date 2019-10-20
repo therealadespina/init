@@ -1,0 +1,6 @@
+# Find the service which makes it possible to run specific tasks following a regular schedule
+
+crontab && cron
+
+# man.
+# https://helpugroup.ru/osnovy-linux-chast-18-zapusk-zadach-po-raspisaniyu/

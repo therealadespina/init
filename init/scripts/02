@@ -1,0 +1,86 @@
+#!/bin/sh
+i=1
+sp="/-\|"
+echo -en ''
+for (( i=1; i <=18; i++ ))
+do
+printf "\033[32m\b${sp:i++%${#sp}:1}\033[37m"
+sleep 0.2
+done
+for (( i=1; i <= 99; i++ ))
+	do
+echo -en "\033[32m-\033[37m"
+sleep 0.005
+done
+echo -e "\033[44m"
+w
+echo -e "\033[40m"
+for (( i=1; i <= 100; i++ ))
+	do
+echo -en "\033[32m-\033[37m"
+#    sleep 0.005
+done
+echo ''
+sleep 2
+printf "\033[32m                           PROTOCOL SYSTEM HAS BEEN BOOT\033[37m"
+echo ''
+sleep 2
+read -p "Here is a list of online USERS: Do you want to continue scaning? (yes) or continue to search for violations? (no) " answer
+case $answer in
+	yes) echo "Scanning";;
+	no) echo "Sorry, this is the end.";;
+esac
+i=1
+sp="/-\|"
+echo -n ''
+for (( i=1; i <=18; i++ ))
+	do
+printf "\033[32m\b${sp:i++%${#sp}:1}\033[37m"
+sleep 0.2
+done
+for (( i=1; i <= 99; i++ ))
+	do
+echo -en "\033[32m-\033[37m"
+sleep 0.005
+done
+echo -e "\033[44m"
+who
+echo -e "\033[40m"
+i=1
+sp="/-\|"
+echo -n ''
+for (( i=1; i <=18; i++ ))
+	do
+printf "\033[32m\b${sp:i++%${#sp}:1}\033[37m"
+sleep 0.2
+done
+for (( i=1; i <= 99; i++ ))
+	do
+echo -en "\033[32m-\033[37m"
+sleep 0.005
+done
+printf "\033[32m                           One user found and he is now online\033[37m"
+echo ''
+printf "I want to remind you that program was created to remove active USERS(only)"
+echo ''
+read -p "Do you want to delete the active user? (yes) or will we just go out and put everything as it was? (no) " answer
+case $answer in
+	yes) echo "Doing";;
+	no) echo "I realy wanted you to do it";;
+esac
+i=1
+sp="/-\|"
+echo -n ''
+for (( i=1; i <=18; i++ ))
+	do
+printf "\033[32m\b${sp:i++%${#sp}:1}\033[37m"
+sleep 0.2
+done
+for (( i=1; i <= 99; i++ ))
+	do
+echo -en "\033[32m-\033[37m"
+sleep 0.005
+done
+pkill -u adespina | skill -KILL -u adespina
+printf "LOL,KEK, Active user has been removed"
+echo ''

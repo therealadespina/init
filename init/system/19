@@ -1,0 +1,5 @@
+# List all services which are started at boot time and name this kind of services
+
+sysv-rc-conf
+
+# Самый простой и наглядный способ вывести список сервисов/программ, находящихся в автозагрузке, с возможностью их редактирования — это использовать консольную утилиту sysv-rc-conf.

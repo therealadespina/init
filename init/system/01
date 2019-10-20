@@ -1,0 +1,9 @@
+# In what file can you find the installed version of your Debian?
+
+/etc/os-release
+
+# Файл /etc/os-release содержит идентификационные данные операционной системы и может быть найден только в более новых дистрибутивах Debian, работающих под управлением systemd.
+# Проверка версии Debian с помощью файла /etc/issue
+# Метод проверки вашей версии Debian – использовать утилиту lsb_release, которая отображает информацию LSB (Linux Standard Base) о дистрибутиве Linux. Этот метод будет работать независимо от того, какую среду рабочего стола или версию Debian вы используете.
+# lsb_release -a
+# lsb_release -d - строкой

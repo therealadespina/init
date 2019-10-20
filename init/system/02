@@ -1,0 +1,6 @@
+# What command can you use to rename your system?
+
+sudo hostname name
+
+# Операционные системы основанные на Debian Linux используют файл /etc/hostname для получения имени хоста во время загрузки и устанавливают его с использованием инициализационного скрипта /etc/init.d/hostname.sh
+# Большинство команд можно найти в man.

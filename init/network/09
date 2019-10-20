@@ -1,0 +1,5 @@
+# Find the external IP of 42.fr
+
+nslookup 42.fr | grep Address: | sed 's/[^0-9.]//g' | cut -c1-23 | grep 163 | sort
+
+# nslookup 42.fr и host 42.fr могут предоставить эту информацию. 

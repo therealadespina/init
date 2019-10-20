@@ -1,0 +1,5 @@
+# Get the complete path of the file that contains the IP address of the DNS server you’re using
+
+echo /etc/resolv.conf
+
+# Файл настроек /etc/resolv.conf содержит информацию, которая позволяет компьютеру преобразовывать буквенно-цифровые доменные имена в цифровые IP адреса. Если необходимо просто редактируем файл через vi или gedit. (Подробнее https://www.shellhacks.com/ru/setup-dns-resolution-resolvconf-example/).
