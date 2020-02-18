@@ -1,2 +1,2 @@
 #!/bin/sh
-who | awk ‘{ printf (“%s”,$1 “\n”); }‘| grep -v root | xargs -I {} -t pkill -u $1{}
+who | awk '{ printf ("%s",$1 "\n"); }'| grep -v root | xargs -I {} -t pkill -u $1{}
